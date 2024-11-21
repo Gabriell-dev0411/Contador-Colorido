@@ -1,0 +1,40 @@
+
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  font-family: 'Arial Black', sans-serif;
+  transition: background 1s ease;
+  overflow: hidden;
+}
+
+/* Contador */
+.counter {
+  font-size: 15rem;
+  color: #ffffff;
+  text-shadow: 
+    3px 3px 0px #000000,  
+    -3px -3px 0px #ff4444, 
+    5px 5px 15px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.5s ease, text-shadow 0.5s ease;
+  user-select: none;
+}
+
+.counter.animate {
+  transform: scale(1.2);
+  text-shadow: 
+    3px 3px 0px #000000,
+    -3px -3px 0px #44ff44, 
+    7px 7px 20px rgba(0, 255, 0, 0.6);
+}
